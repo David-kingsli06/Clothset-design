@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F5F2EB;
+  --foreground: #22201D;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.font-serif-luxury {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+/* Subtle organic grain overlay for artisanal paper touch */
+.bg-grain {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.035) 1px, transparent 0);
+  background-size: 24px 24px;
+}
